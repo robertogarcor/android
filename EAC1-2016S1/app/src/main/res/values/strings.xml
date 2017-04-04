@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">EAC1-2016S1</string>
+    <string name="nom_cognom">Nom i Cognoms</string>
+    <string name="opcio1">Opció 1</string>
+    <string name="opcio2">Opció 2</string>
+    <string name="text_cicle">Cicle Seleccionat</string>
+    <string name="undefined">Valor no definit</string>
+    <string name="text_curs">Curs:</string>
+    <string name="btn_enviar">ENVIAR</string>
+    <string name="btn_acceptar">ACCEPTAR</string>
+    <string name="btn_cancelar">CANCEL·LAR</string>
+    <string name="title_seleccioActivity">~Seleccio</string>
+    <string name="descontent_image_del">Esborrar</string>
+    <string name="descontent_image_edit">Editar</string>
+
+    <string-array name="cicles">
+        <item>Desenvolupament d’aplicacions multiplataforma</item>
+        <item>Desenvolpament d’aplicacions web</item>
+        <item>Administració de sistemes informàtics en xarxa</item>
+        <item>Sistemes microinformàtics i xarxes</item>
+    </string-array>
+
+    <string-array name="curs">
+        <item>Primer</item>
+        <item>Segon</item>
+    </string-array>
+
+
+</resources>
