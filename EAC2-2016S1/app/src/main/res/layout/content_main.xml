@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutContent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ioc.robertogarciacorcoles.eac2_2016s1.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!--LinearLayout Progress Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutProgressBar">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/prgbTasques" />
+    </LinearLayout> <!-- .end LinearLayout Progress Bar -->
+
+
+    <!--LinearLayout Cerca-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:weightSum="1"
+        android:id="@+id/linearLayoutCercador">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".95"
+                android:layout_marginTop="3dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:hint="@string/placeHolder_editSearch"
+                android:theme="@style/AppTheme.editTextStyle"
+                android:id="@+id/edtCerca" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight=".05"
+                android:layout_gravity="left"
+                android:contentDescription="@string/des_btn_Cerca"
+                android:id="@+id/btnCerca"
+                android:src="@android:drawable/ic_menu_search"
+                android:background="@color/colorGreenDark"/>
+    </LinearLayout><!-- .end LinearLayout Cerca -->
+
+    <!--LinearLayout Section RSS-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:id="@+id/linearLayoutSectionRSS">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_sectionsRSS"
+            android:textColor="@color/colorGreenDark"
+            android:id="@+id/tvtextRSS" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".95"
+                    android:background="@color/colorGreenLight"
+                    android:id="@+id/spItemsRSS">
+                </Spinner>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".05"
+                    android:paddingTop="0dp"
+                    android:layout_gravity="left"
+                    android:contentDescription="@string/des_btn_download"
+                    android:id="@+id/btnDowloadRSS"
+                    android:src="@android:drawable/stat_sys_download"
+                    android:background="@color/colorGreenDark" />
+        </LinearLayout>
+    </LinearLayout><!-- .end LinearLayout Section RSS-->
+
+    <!-- LinearLayout List View -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutListNoticies">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lwTitleNews">
+        </ListView>
+    </LinearLayout> <!-- .end LinearLayout List View -->
+</LinearLayout>

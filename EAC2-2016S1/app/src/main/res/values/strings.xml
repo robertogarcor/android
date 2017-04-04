@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EAC2-2016S1</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_update">Update</string>
+    <string name="action_search">Search</string>
+    <string name="action_section">Sections</string>
+    <string name="text_sectionsRSS">Secciones RSS disponibles en la red</string>
+    <string name="connection_error">Error de connexió!</string>
+    <string name="xml_error">Error a analitzar XML!</string>
+    <string name="des_btn_Cerca">Search</string>
+    <string name="placeHolder_editSearch">Search</string>
+    <string name="des_btn_download">Download RSS</string>
+
+    <string name="seccioTecnoRSS">RSS Tecnologia</string>
+    <string name="seccioDeporteRSS">RSS Deportes</string>
+    <string name="seccioCulturaRSS">RSS Cultura</string>
+    <string name="seccioEconomiaRSS">RSS Economia</string>
+    <string name="seccioSociedadRSS">RSS Sociedad</string>
+    <string name="seccioCienciaRSS">RSS Ciencia</string>
+
+
+    <string-array name="sectionsRSS">
+        <item>Ciencia</item>
+        <item>Cultura</item>
+        <item>Deportes</item>
+        <item>Economia</item>
+        <item>Sociedad</item>
+        <item>Tecnologia</item>
+    </string-array>
+
+
+</resources>

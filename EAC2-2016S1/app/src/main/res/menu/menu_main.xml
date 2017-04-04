@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ioc.robertogarciacorcoles.eac2_2016s1.MainActivity">
+
+    <!-- Item associats a la toolbar per ser visualitzat -->
+    <item
+        android:id="@+id/action_section"
+        android:icon="@mipmap/ic_launcher_list"
+        android:orderInCategory="1"
+        android:title="@string/action_section"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_update"
+        android:icon="@mipmap/ic_launcher_update"
+        android:orderInCategory="2"
+        android:title="@string/action_update"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_launcher_search"
+        android:orderInCategory="3"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" />
+</menu>
