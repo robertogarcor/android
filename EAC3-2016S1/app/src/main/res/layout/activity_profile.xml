@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayoutWrapperProfile"
+    tools:context="com.ioc.robertogarciacorcoles.eac3_2016s1.ProfileActivity">
+
+
+    <!-- Linear Layout Dades Personals profile-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/LinearLayoutDadesPersonal">
+
+        <!--Linear Layout Dades profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".60"
+            android:id="@+id/LinearLayoutDades">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:theme="@style/AppTheme.editTextStyle"
+                android:hint="@string/placeholder_nom"
+                android:id="@+id/edtNom"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:theme="@style/AppTheme.editTextStyle"
+                android:hint="@string/placeholder_cognom"
+                android:id="@+id/edtCognom"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/spSexe">
+            </Spinner>
+
+        </LinearLayout> <!-- .end Linear Layout Dades profile-->
+
+        <!-- Linear Layout Foto profile -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".40"
+            android:id="@+id/LinearLayoutFoto">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/desp_foto_profile"
+                android:id="@+id/imgViewFoto"
+                android:src="@android:drawable/ic_menu_camera"
+                android:background="@color/dim_foreground_disabled_material_dark" />
+
+        </LinearLayout> <!-- .end Linear Layout Foto profile -->
+
+    </LinearLayout> <!-- .end Linear Layout Dades Personals profile -->
+
+
+    <!-- Linear Layout Comentari sobre tu i buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:id="@+id/LinearLayoutSobretu">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:maxLines="8"
+                android:gravity="top"
+                android:theme="@style/AppTheme.editTextStyle"
+                android:hint="@string/placeholder_sobretu"
+                android:id="@+id/edtComentari"  />
+
+        <!-- Linear Layout Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:id="@+id/LinearLayoutButtons">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.50"
+                android:text="@string/text_btn_acceptar"
+                android:id="@+id/btnAcceptar"   />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.50"
+                android:text="@string/text_btn_cancelar"
+                android:id="@+id/btnCancelar" />
+
+        </LinearLayout> <!-- .end Linear Layout Buttons -->
+
+    </LinearLayout> <!-- .end Linear Layout Comentari sobre tu i buttons-->
+
+
+</LinearLayout>
