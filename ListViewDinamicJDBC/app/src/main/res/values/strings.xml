@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ListViewDinamicJDBC</string>
+    <string name="empresa">2017 ListViewDinamicJDBC.edu \n AsyncTask - Thread - Handler</string>
+    <string name="title_activity_listview">Displaying List View</string>
+    <string name="btn_refresc">Refresc List</string>
+    <string name="lv_products">ListView Products</string>
+    <string name="tv_btnclick">Click button to see list of products</string>
+    <string name="tv_refresc">"Refresc list of products"</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_decription">Description</string>
+    <string name="tv_price">Price</string>
+    <string name="tv_amount">Amount</string>
+    <string name="tv_active">1</string>
+    <string name="tv_txt_active">Act.</string>
+</resources>

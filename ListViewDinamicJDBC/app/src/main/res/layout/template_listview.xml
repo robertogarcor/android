@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_margin="10sp"
+    android:id="@+id/ltyTemplateList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/lytListProducts">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".55">
+
+            <TextView
+                android:text="@string/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="@string/tv_decription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".45"
+            android:weightSum="1">
+
+            <TextView
+                android:text="@string/tv_price"
+                android:layout_width="0dp"
+                android:layout_weight=".40"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:text="@string/tv_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".40"
+                android:id="@+id/tvAmount"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:id="@+id/imgViewActive"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                tools:src="@mipmap/ic_launcher_active"
+                android:scaleX=".75"
+                android:scaleY=".75" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
