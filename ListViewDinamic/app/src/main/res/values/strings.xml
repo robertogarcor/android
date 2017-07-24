@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">ListViewDinamic</string>
-    <string name="empresa">2017 ListViewDinamic.edu</string>
-    <string name="title_activity_listview">Displaying List View</string>
-    <string name="btn_refresc">Refresc List</string>
-    <string name="lv_products">ListView Products</string>
-    <string name="tv_btnclick">Click button to see list of products</string>
-    <string name="tv_refresc">"Refresc list of products"</string>
-</resources>
