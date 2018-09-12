@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sounds</string>
+
+    <string name="hello_music">Hello Music!</string>
+    <string name="hello_sound">Hello Sound!</string>
+
+    <string name="btn_music_start">Music Start</string>
+    <string name="btn_music_stop">Music Stop</string>
+    <string name="btn_sound_start">Sound Start</string>
+    <string name="btn_sound_stop">Sound Stop</string>
+
+    <string name="music_start">Music Start</string>
+    <string name="music_stop">Music Stop</string>
+    <string name="sound_start">SoundPool Start</string>
+    <string name="sound_stop">SoundPool Stop</string>
+</resources>
